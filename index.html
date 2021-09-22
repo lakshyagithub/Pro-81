@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Project-81</title>
+
+<style>
+	h1
+	{
+		color: red; 
+		font-size: 40px;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	.body_backgorund {
+		background-image: url(https://thumbs.dreamstime.com/b/vector-colored-pencils-circle-background-file-eps-format-31016558.jpg);
+		background-size: cover;
+		background-position:  center;
+	}
+	
+	#myCanvas{
+		background-color: white;
+		border-width: 10px;
+		border-style: solid;
+	}
+	</style>
+</head>
+<body class="body_backgorund">
+
+<center>
+	<h1>OLYMPIC LOGO</h1>
+	<canvas id="myCanvas" height="400" width="800"></canvas>
+</center>
+
+
+<script>
+	var canvas = document.getElementById("myCanvas");
+	var ctx= canvas.getContext("2d");
+	var ctx1= canvas.getContext("2d");
+	var ctx2= canvas.getContext("2d");
+	var ctx3= canvas.getContext("2d");
+	var ctx4= canvas.getContext("2d");
+
+	ctx.beginPath();
+	ctx.strokeStyle = "blue";
+	ctx.lineWidth = 5;
+	ctx.arc(250,210,40,0,2 * Math.PI);
+	ctx.stroke();
+
+	ctx1.beginPath();
+	ctx1.strokeStyle = "yellow";
+	ctx1.lineWidth = 5;
+	ctx1.arc(317,237,40,0,2 * Math.PI);
+	ctx1.stroke();
+
+	ctx2.beginPath();
+	ctx2.strokeStyle = "black";
+	ctx2.lineWidth = 5;
+	ctx2.arc(380,210,40,0,2 * Math.PI);
+	ctx2.stroke();
+
+	ctx3.beginPath();
+	ctx3.strokeStyle = "green";
+	ctx3.lineWidth = 5;
+	ctx3.arc(440,237,40,0,2 * Math.PI);
+	ctx3.stroke();
+
+	ctx4.beginPath();
+	ctx4.strokeStyle = "red";
+	ctx4.lineWidth = 5;
+	ctx4.arc(500,210,40,0,2 * Math.PI);
+	ctx4.stroke();
+</script>
+</body>
+</html>
